@@ -6,7 +6,9 @@ import random
 def main():
     values = ['']
 
-    hiringManager = str(input('Enter the Manager name\n'))
+    hiringManager = str(input('Enter the Manager name. Write \'-\' if no manager name specified\n'))
+	if hiringManager == "-":
+		hiringManager = "Hiring Manager"
     role = str(input('Enter the Role\n'))
     company = str(input('Enter the Company name\n'))
     requirements = str(input('Enter the job requirements as they appear'))
