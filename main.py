@@ -7,11 +7,11 @@ def main():
     values = ['']
 
     hiringManager = str(input('Enter the Manager name. Write \'-\' if no manager name specified\n'))
-	if hiringManager == "-":
-		hiringManager = "Hiring Manager"
+    if hiringManager == "-":
+        hiringManager = "Hiring Manager"
     role = str(input('Enter the Role\n'))
     company = str(input('Enter the Company name\n'))
-    requirements = str(input('Enter the job requirements as they appear'))
+    requirements = str(input('Enter the job requirements as they appear\n'))
 
     x = random.randrange(0, 3)
     foo = open('out.txt', 'w')
@@ -32,6 +32,8 @@ def main():
 
         for l in lines:
             for ll in l:
+                if ll == '[company]':
+                    ll = ll.replace('[company]', company)
                 if ll == '[manager]:\n':
                     ll = ll.replace('[manager]:\n', hiringManager+':\n')
                 if ll == '[role]':
@@ -40,6 +42,7 @@ def main():
                     ll = ll.replace('[values]', values)
                 if ll == '[career_profile]':
                     ll = ll.replace('[career_profile]', proff)
+                    ll = ll[:-2]
                 if ll == '[requirements]':
                     ll = ll.replace('[requirements]', requirements)
                 nlines.append([ll])
@@ -51,6 +54,7 @@ def main():
                 outt += ' '
 
         foo.write(outt)
+        foo.write("\n")
 
         foo.close()
 
@@ -77,6 +81,7 @@ def main():
                     ll = ll.replace('[languages]', languages)
                 if ll == '[seller]':
                     ll = ll.replace('[seller]', sellr)
+                    ll = ll[:-1]
                 nlines.append([ll])
 
         for l in nlines:
@@ -86,6 +91,7 @@ def main():
                 outt += ' '
 
         foo.write(outt)
+        foo.write("\n")
 
         foo.close()
 

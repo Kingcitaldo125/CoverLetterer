@@ -1,11 +1,11 @@
-Dear Hiring Manager:
- I'm writing to express my interest in the recently advertised Software Engineer role.
- I believe I could bring valuable skills and experience to DCS that would make me an ideal fit for this position.
+Dear Mr/Ms Manager:
+ I'm writing to express my interest in the recently advertised Programmer role.
+ I believe I could bring valuable skills and experience to CACI that would make me an ideal fit for this position.
  I have almost 2 years of experience as a software developer, and in this time I have helped deploy applications in C++,
- wrote a web applet in Javascript, helped improve a backend database system using PostgreSQL and C++, and much more.
- I believe that I am an ample fit for the Software Engineer position here at DCS , because I have closely worked with
- languages such as C, C++, Java, Javascript, and Python in the past.
- I am a hard worker with a passion for software development. I believe that I can be a strong asset to DCS because of my strong knowledge in the languages described.
+  wrote a web applet in Javascript, helped improve a backend database system using PostgreSQL and C++, and much more.
+ I believe that I am an ample fit for the Programmer position here at CACI , because I have closely worked with
+ languages such as C, C++, Java, Javascript, Python, HTML and CSS in the past.
+ I am a hard worker with a passion for coding. I believe that I can be a strong asset to CACI because of my strong knowledge in the languages described .
  Thank you for taking the time to consider my application, and I look forward to hearing from you.
  Yours sincerely,
- Paul Arelt.
+ Paul Arelt. 
