@@ -1,99 +1,75 @@
 # AUTHOR: PAUL ARELT
+# All rights reserved
 
 import random
+import re
+
+def readTemplate(tempNumber):
+	templateText = ""
+	templateSections = []
+	
+	if tempNumber == 1:
+		with open("tOneSections.txt","r") as f:
+			templateSections = [x.strip() for x in f.readlines()]
+		with open("templateOne.txt","r") as f:
+			templateText = f.read()
+	else:
+		with open("tTwoSections.txt","r") as f:
+			templateSections = [x.strip() for x in f.readlines()]
+		with open("templateTwo.txt","r") as f:
+			templateText = f.read()
+	
+	return [templateText,templateSections]
+	
+def buildCLetter(section, sectionTxt, txt):
+	regex = r'\[' + re.escape(str(section)) + r'\]'
+
+	m = re.sub(regex, sectionTxt, txt)
+	
+	return m
 
 
 def main():
-    values = ['']
-
     hiringManager = str(input('Enter the Manager name. Write \'-\' if no manager name specified\n'))
     if hiringManager == "-":
         hiringManager = "Hiring Manager"
     role = str(input('Enter the Role\n'))
     company = str(input('Enter the Company name\n'))
     requirements = str(input('Enter the job requirements as they appear\n'))
-
-    x = random.randrange(0, 3)
-    foo = open('out.txt', 'w')
-    templateNumber = 0
+    values = "works hard, pays close attention to detail and works well with others"
+    career_profile = "I have experience working with C, C++, Java, Python, HTML, Javascript, CSS and Swift"
+    seller = "I am a hard worker with a passion for coding. I believe that I can be a strong asset to "+company+" because of my strong knowledge in the languages described"
     languages = "C, C++, Java, Javascript, Python, HTML and CSS"
 
-    if x == 1:
-        outt = ""
-        lines = []
-        nlines = []
-        templateNumber = 1
-        fileobj = open('templateOne.txt', 'r+')
-        values = "works hard, pays close attention to detail and works well with others"
-        proff = "I have experience working with C, C++, Java, Python, HTML, Javascript, CSS and Swift."
-        for xx in fileobj:
-            lines.append(xx.split(' '))
-        #print(lines)
+    foo = open('out.txt', 'w')
+    templateNumber = random.randrange(1, 3)
+    templateList = readTemplate(templateNumber)
+    totalText = ""
+    for data in templateList:
+        txt = templateList[0]
+        totalText = txt
+        sections = templateList[1]
+        for s in sections:
+                if s == "[manager]":
+                        totalText = buildCLetter("manager", hiringManager, totalText)
+                elif s == "[role]":
+                        totalText = buildCLetter("role", role, totalText)
+                elif s == "[company]":
+                        totalText = buildCLetter("company", company, totalText)
+                elif s == "[career_profile]":
+                        totalText = buildCLetter("career_profile", career_profile, totalText)
+                elif s == "[requirements]":
+                        totalText = buildCLetter("requirements", requirements, totalText)
+                elif s == "[languages]":
+                        totalText = buildCLetter("languages", languages, totalText)
+                elif s == "[seller]":
+                        totalText = buildCLetter("seller", seller, totalText)
+                elif s == "[values]":
+                        totalText = buildCLetter("values", values, totalText)
 
-        for l in lines:
-            for ll in l:
-                if ll == '[company]':
-                    ll = ll.replace('[company]', company)
-                if ll == '[manager]:\n':
-                    ll = ll.replace('[manager]:\n', hiringManager+':\n')
-                if ll == '[role]':
-                    ll = ll.replace('[role]', role)
-                if ll == '[values]':
-                    ll = ll.replace('[values]', values)
-                if ll == '[career_profile]':
-                    ll = ll.replace('[career_profile]', proff)
-                    ll = ll[:-2]
-                if ll == '[requirements]':
-                    ll = ll.replace('[requirements]', requirements)
-                nlines.append([ll])
-
-        for l in nlines:
-            for ll in l:
-                #print(ll)
-                outt += ll
-                outt += ' '
-
-        foo.write(outt)
-        foo.write("\n")
-
-        foo.close()
-
-    else:
-        outt = ""
-        lines = []
-        nlines = []
-        templateNumber = 2
-        fileobj = open('templateTwo.txt', 'r+')
-        sellr = "I am a hard worker with a passion for coding. " \
-                "I believe that I can be a strong asset to "+company+" because of my strong knowledge in the languages described."
-        for xx in fileobj:
-            lines.append(xx.split(' '))
-
-        for l in lines:
-            for ll in l:
-                if ll == '[company]':
-                    ll = ll.replace('[company]', company)
-                if ll == '[manager]:\n':
-                    ll = ll.replace('[manager]:\n', hiringManager+':\n')
-                if ll == '[role]':
-                    ll = ll.replace('[role]', role)
-                if ll == '[languages]':
-                    ll = ll.replace('[languages]', languages)
-                if ll == '[seller]':
-                    ll = ll.replace('[seller]', sellr)
-                    ll = ll[:-1]
-                nlines.append([ll])
-
-        for l in nlines:
-            for ll in l:
-                #print(ll)
-                outt += ll
-                outt += ' '
-
-        foo.write(outt)
-        foo.write("\n")
-
-        foo.close()
+    with open("out.txt","w") as f:
+        f.write(str(totalText))
+        f.write("\n")
 
 
 main()

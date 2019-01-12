@@ -1,0 +1,6 @@
+[manager]
+[role]
+[company]
+[career_profile]
+[requirements]
+[values]

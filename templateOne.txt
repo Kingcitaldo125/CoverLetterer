@@ -1,9 +1,9 @@
 Dear [manager]:
-I’m writing in response to your recently advertised position for a [role] .
+I am writing in response to your recently advertised position for a [role].
 I am very interested in this opportunity with [company] and believe that my qualifications,
 education and professional experience would make me a strong candidate for the position.
-I am a software developer who [values] .
-[career_profile] .
+I am a software developer who [values].
+[career_profile].
 Enclosed is my resume that more fully details my background and work experience, and how they relate to your position.
 As you can see, I have worked with your [requirements] requirements in the past, and I enjoy working with those requirements.
 I firmly believe that I can be a valuable asset to your team.
