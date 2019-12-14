@@ -37,9 +37,9 @@ def main():
     company = str(input('Enter the Company name\n'))
     requirements = str(input('Enter the job requirements as they appear\n'))
     values = "works hard, pays close attention to detail and works well with others"
-    career_profile = "I have experience working with C, C++, Java, Python, HTML, Javascript, CSS and Swift"
+    career_profile = "I have experience working with C++(Qt 5 and STL), Java, Python, HTML, Javascript, CSS"
     seller = "I am a hard worker with a passion for coding. I believe that I can be a strong asset to "+company+" because of my strong knowledge in the languages described"
-    languages = "C, C++, Java, Javascript, Python, HTML and CSS"
+    languages = "C++, Java, Javascript, Python, HTML and CSS"
 
     foo = open('out.txt', 'w')
     templateNumber = random.randrange(1, 3)
