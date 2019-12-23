@@ -41,7 +41,6 @@ def main():
     seller = "I am a hard worker with a passion for coding. I believe that I can be a strong asset to "+company+" because of my strong knowledge in the languages described"
     languages = "C++, Java, Javascript, Python, HTML and CSS"
 
-    foo = open('out.txt', 'w')
     templateNumber = random.randrange(1, 3)
     templateList = readTemplate(templateNumber)
     totalText = ""
