@@ -29,16 +29,12 @@ def buildCLetter(section, sectionTxt, txt):
 	return m
 
 
-def main():
-    role = str(input('Enter the Role\n'))
-    company = str(input('Enter the Company name\n'))
-    requirements = str(input('Enter the job requirements as they appear\n'))
+def mymain(role, company, requirements, templateNumber):
     values = "works hard, pays close attention to detail and works well with others"
     career_profile = "I have experience working with C++(Qt 5 and STL), Java, Python, HTML, Javascript, CSS"
     seller = "I am a hard worker with a passion for coding. I believe that I can be a strong asset to "+company+" because of my strong knowledge in the languages described"
     languages = "C++, Java, Javascript, Python, HTML and CSS"
-
-    templateNumber = random.randrange(1, 3)
+	
     templateList = readTemplate(templateNumber)
     totalText = ""
     for data in templateList:
@@ -64,5 +60,13 @@ def main():
     with open("out.txt","w") as f:
         f.write(str(totalText))
         f.write("\n")
+	
+    return totalText
 
-main()
+if __name__ == "__main__":
+	role = str(input('Enter the Role\n'))
+	company = str(input('Enter the Company name\n'))
+	requirements = str(input('Enter the job requirements as they appear\n'))
+	templateNumber = random.randrange(1, 3)
+	print("Template Number:", templateNumber)
+	print(mymain(role, company, requirements, templateNumber))
