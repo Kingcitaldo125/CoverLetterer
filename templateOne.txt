@@ -1,4 +1,5 @@
-Dear [manager]:
+Dear Hiring Manager,
+
 I am writing in response to your recently advertised position for a [role].
 I am very interested in this opportunity with [company] and believe that my qualifications,
 education and professional experience would make me a strong candidate for the position.
@@ -8,6 +9,9 @@ Enclosed is my resume that more fully details my background and work experience,
 As you can see, I have worked with your [requirements] requirements in the past, and I enjoy working with those requirements.
 I firmly believe that I can be a valuable asset to your team.
 I welcome the opportunity to speak with you about this position and how my experience could help [company] achieve its goals.
+
 Thank you in advance for your consideration.
+
 Kind regards,
-Paul Arelt.
+
+Paul Arelt

@@ -30,9 +30,6 @@ def buildCLetter(section, sectionTxt, txt):
 
 
 def main():
-    hiringManager = str(input('Enter the Manager name. Write \'-\' if no manager name specified\n'))
-    if hiringManager == "-":
-        hiringManager = "Hiring Manager"
     role = str(input('Enter the Role\n'))
     company = str(input('Enter the Company name\n'))
     requirements = str(input('Enter the job requirements as they appear\n'))
@@ -49,26 +46,23 @@ def main():
         totalText = txt
         sections = templateList[1]
         for s in sections:
-                if s == "[manager]":
-                        totalText = buildCLetter("manager", hiringManager, totalText)
-                elif s == "[role]":
-                        totalText = buildCLetter("role", role, totalText)
-                elif s == "[company]":
-                        totalText = buildCLetter("company", company, totalText)
-                elif s == "[career_profile]":
-                        totalText = buildCLetter("career_profile", career_profile, totalText)
-                elif s == "[requirements]":
-                        totalText = buildCLetter("requirements", requirements, totalText)
-                elif s == "[languages]":
-                        totalText = buildCLetter("languages", languages, totalText)
-                elif s == "[seller]":
-                        totalText = buildCLetter("seller", seller, totalText)
-                elif s == "[values]":
-                        totalText = buildCLetter("values", values, totalText)
+            if s == "[role]":
+                totalText = buildCLetter("role", role, totalText)
+            elif s == "[company]":
+                totalText = buildCLetter("company", company, totalText)
+            elif s == "[career_profile]":
+                totalText = buildCLetter("career_profile", career_profile, totalText)
+            elif s == "[requirements]":
+                totalText = buildCLetter("requirements", requirements, totalText)
+            elif s == "[languages]":
+                totalText = buildCLetter("languages", languages, totalText)
+            elif s == "[seller]":
+                totalText = buildCLetter("seller", seller, totalText)
+            elif s == "[values]":
+                totalText = buildCLetter("values", values, totalText)
 
     with open("out.txt","w") as f:
         f.write(str(totalText))
         f.write("\n")
-
 
 main()

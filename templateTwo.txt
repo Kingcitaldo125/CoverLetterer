@@ -1,4 +1,5 @@
-Dear [manager]:
+Dear Hiring Manager,
+
 I am writing to express my interest in the recently advertised [role] role.
 I believe I could bring valuable skills and experience to [company] that would make me an ideal fit for this position.
 I have 3 years of experience as a software engineer/developer, and in this time I have helped deploy applications in C++,
@@ -7,5 +8,7 @@ I believe that I am an ample fit for the [role] position here at [company], beca
 languages such as [languages] in the past.
 [seller].
 Thank you for taking the time to consider my application, and I look forward to hearing from you.
+
 Yours sincerely,
-Paul Arelt.
+
+Paul Arelt
