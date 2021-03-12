@@ -1,5 +1,5 @@
 # AUTHOR: PAUL ARELT
-# All rights reserved
+# See the LICENSE file for information on applying the legalese
 
 import random
 import re
