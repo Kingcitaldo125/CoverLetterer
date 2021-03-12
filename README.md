@@ -15,7 +15,7 @@ Enter the Role
 Enter the Company Name
 >>> Company.inc
 Enter the job requirements as they appear
-C, C++ and Java
+>>> C, C++ and Java
 ```
 
 Check `out.txt` for the resulting cover letter.
