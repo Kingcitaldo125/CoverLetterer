@@ -31,9 +31,9 @@ def buildCLetter(section, sectionTxt, txt):
 
 def mymain(role, company, requirements, templateNumber, name):
 	values = "works hard, pays close attention to detail and works well with others"
-	career_profile = "I have experience working with C++(Qt 5 and STL), Java, Python, HTML, Javascript, CSS"
+	career_profile = "I also have experience working with C++(Qt 5 and STL), Python, and Java programming languages"
 	seller = "I am a hard worker with a passion for coding. I believe that I can be a strong asset to "+company+" because of my strong knowledge in the languages described"
-	languages = "C++, Java, Javascript, Python, HTML and CSS"
+	languages = "C++, Python, and Java"
 
 	templateList = readTemplate(templateNumber)
 	totalText = ""
