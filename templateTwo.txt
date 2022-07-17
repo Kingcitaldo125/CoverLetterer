@@ -1,13 +1,15 @@
-Dear Hiring Manager,
+Dear Hiring Manager at [company],
 
 I am writing to express my interest in the recently advertised [role] role.
 I believe I could bring valuable skills and experience to [company] that would make me an ideal fit for this position.
 I have 5 years of experience as a software engineer/developer.
 In this time I have helped develop and deploy several applications in C++.
 I have built a C++ based SDK from the ground up, worked on personal projects that leverage modern C++ and CMake, and much more.
-I believe that I am an ample fit for the [role] position here at [company], because I have closely worked with
-languages such as [languages] in the past.
-[seller].
+I believe that I am an ample fit for the Senior Software Engineer position here at [company], because I have closely worked with
+the tools and technologies advertised in the job description in the past.
+I am a hard worker with a passion for engineering.
+I believe that I can be a strong asset to [company] because of my strong knowledge in the areas described.
+
 Thank you for taking the time to consider my application, and I look forward to hearing from you.
 
 Yours sincerely,

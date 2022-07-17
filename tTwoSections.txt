@@ -3,6 +3,4 @@
 [company]
 [career_profile]
 [requirements]
-[languages]
-[seller]
 [name]

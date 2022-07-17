@@ -70,6 +70,11 @@ if __name__ == "__main__":
 	role = str(input('Enter the Role\n'))
 	company = str(input('Enter the Company name\n'))
 	requirements = str(input('Enter the job requirements as they appear\n'))
+
 	templateNumber = random.randrange(1, 3)
+
+	# For testing
+	#templateNumber = 2
+
 	print("Template Number:", templateNumber)
 	print(mymain(role, company, requirements, templateNumber, name))
